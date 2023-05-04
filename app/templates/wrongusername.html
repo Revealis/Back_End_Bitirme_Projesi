@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hata!</title>
+	<link rel="icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+	<style>
+		body {
+			background-image: url('/static/images/background-image.jpeg'); /* replace with your image file path */
+			background-size: cover;
+			background-position: cover;
+			font-family: Arial, sans-serif;
+			color: white;
+		}
+		h1 {
+			font-size: 3em;
+			text-align: center;
+			margin-top: 50px;
+		}
+		p {
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 30px;
+		}
+	</style> <!--arka plana koyulan fotoğrafın boyutu ve konumunu,yazılacak yazıların rengi,boyutu ve konumunu belirleyen kodlar.-->
+</head>
+<body>
+	<h1>Yanlış mail ya da şifre girdiniz !</h1>
+	<p>Lütfen girdiğiniz maili ve şifrenizi kontrol edin ve tekrar deneyin. </p>
+</body>
+</html>

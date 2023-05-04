@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANGAPP'a Giriş Yap</title>
+    <link rel="icon" href="{{ url_for('static', filename='icon/favicon2.ico') }}">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/static/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/static/css/style2.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form action=/login method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Giriş Yap</h2>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Mail Adresiniz"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Şifre"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Giriş Yap"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Hesabın yok mu ? <a href="{{ url_for('kayitol') }}" class="loginhere-link">Kayıt Ol</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
