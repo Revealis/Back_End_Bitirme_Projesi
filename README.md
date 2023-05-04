@@ -1,1 +1,1 @@
-# Back_End_Bitirme_Projesi
+#back-end developer bootcamp'ının bitirme projesidir.
